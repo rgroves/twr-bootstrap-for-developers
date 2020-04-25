@@ -11,9 +11,43 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <title>Hello, world!</title>
+  <style>
+    @media(min-width:576px) {
+      body {
+        background: cyan;
+      }
+    }
+
+    @media(min-width:768px) {
+      body {
+        background: lightblue;
+      }
+    }
+
+    @media(min-width:992px) {
+      body {
+        background: lightgreen;
+      }
+    }
+
+    @media(min-width:1200px) {
+      body {
+        background: yellow;
+      }
+    }
+
+    @media(max-width:575px) {
+      body {
+        background: gray;
+      }
+    }
+
+  </style>
 </head>
 
 <body>
+
+  <h1 class="text-center display-3 my-2">Breakpoints in Bootstrap 4</h1>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
