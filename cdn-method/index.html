@@ -11,9 +11,116 @@
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <title>Hello, world!</title>
+  <style>
+    div {
+      margin-top: 20px;
+      /* border: 1px solid #000; */
+    }
+
+  </style>
 </head>
 
 <body>
+
+  <!-- 12 Column Grid Layout -->
+  <!-- using col creates equal width columns -->
+  <section class="container">
+    <section class="row">
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+    </section>
+  </section>
+
+  <!-- You can separate the columns with other elements as shown by the w-100 div below. -->
+  <section class="container">
+    <section class="row">
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+      <div class="w-100">seperation</div>
+      <div class="col">Equal</div>
+      <div class="col">Equal</div>
+    </section>
+  </section>
+
+  <!-- Sibling columns without a specific column width (e.g. col-8, col-2) will
+       be auto sized to make up the 12 column layout. Note, these columns are 
+       not responsive. -->
+  <section class="container">
+    <section class="row">
+      <div class="col">Auto</div>
+      <div class="col-8">Col 8</div>
+      <div class="col-2">Col 2</div>
+    </section>
+  </section>
+
+  <!-- This will stack the columns until the small breakpoint is hit (576px) -->
+  <section class="container">
+    <section class="row">
+      <div class="col-sm">small</div>
+      <div class="col-sm">small</div>
+      <div class="col-sm">small</div>
+    </section>
+  </section>
+
+  <!-- Columns can be ordered as needed. -->
+  <section class="container">
+    <section class="row">
+      <div class="col-sm order-3">First</div>
+      <div class="col-sm order-1">Second</div>
+      <div class="col-sm order-2">Third</div>
+    </section>
+  </section>
+
+  <!-- Rows/Columns can be nested. -->
+  <section class="container">
+    <section class="row">
+      <div class="col bg-warning">First
+        <section class="row">
+          <div class="col bg-info">Second</div>
+          <div class="col bg-success">Third</div>
+        </section>
+      </div>
+    </section>
+  </section>
+
+  <!-- You can set specific columns widths fore different breakpoint sizes. -->
+  <section class="container">
+    <section class="row">
+      <div class="col-sm-6 col-md-7 col-lg-8 col-xl-10 bg-warning">
+        <p>SM: 576PX<br>MD: 768px<br>LG: 992px<br>XL: 1200px</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- Different multi-column layouts. -->
+  <section class="container">
+    <section class="row">
+      <div class="col-6 bg-info">1</div>
+      <div class="col-6 bg-secondary">2</div>
+    </section>
+    <section class="row">
+      <div class="col-4 bg-info">1</div>
+      <div class="col-4 bg-secondary">2</div>
+      <div class="col-4 bg-success">3</div>
+    </section>
+    <section class="row">
+      <div class="col-3 bg-info">1</div>
+      <div class="col-3 bg-secondary">2</div>
+      <div class="col-3 bg-success">3</div>
+      <div class="col-3 bg-danger">4</div>
+    </section>
+  </section>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
